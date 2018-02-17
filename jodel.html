@@ -59,12 +59,14 @@
     }
 
     img.card-img {
-        -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
-        filter: blur(10px);
+        -webkit-filter: blur(25px); /* Safari 6.0 - 9.0 */
+        filter: blur(25px);
         margin: -10px -1px -10px 0px;
+        max-width: 100%;
     }
+
     img.emoji {
-    margin: 0px !important;
+        margin: 0px !important;
         display: inline !important;
     }
 </style>
@@ -72,7 +74,7 @@
 <div class="container">
     <div class="card-columns">
         <!-- Card 1 -->
-        <div class="card text-white bg-danger" data-toggle="modal" data-target="#exampleModalLong">
+        <div class="card text-white bg-danger" data-toggle="modal" data-target="#exampleModalPost">
             <div class="card-body">
                 <div class="row">
                     <div class="col-10">
@@ -197,7 +199,9 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="card-text">Ich schau gerade die olympischen Winterspiele und frage mich gerade, wie man drauf kommt sich auf nen mini Schlitten zu legen und Kopfüber mit 140 km/h ne Eisbahn runterzubrettern 😀❄️❄️❄️</p>
+                                <p class="card-text">Ich schau gerade die olympischen Winterspiele und frage mich
+                                    gerade, wie man drauf kommt sich auf nen mini Schlitten zu legen und Kopfüber mit
+                                    140 km/h ne Eisbahn runterzubrettern 😀❄️❄️❄️</p>
                             </div>
                         </div>
                         <div class="row">
@@ -219,17 +223,45 @@
             </div>
         </div>
         <!-- Card 5 -->
-        <div class="card text-white">
+        <div class="card text-white" data-toggle="modal" data-target="#exampleModalPostImage">
             <div style="overflow: hidden;">
                 <img class="card-img"
                      src="http://dgue1f1nm4nsd.cloudfront.net/5a8800f229e9790010545a48_rW8tS81guPXFRM4J_thumb.jpeg"
                      width="286" height="180" alt="Card image">
             </div>
             <div class="card-img-overlay">
-                <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
-                <i class="far fa-comments"></i>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main
+                                    Feed</strong> • 1min</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>️</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p></p>
+                                <i class="far fa-comments"> </i>
+                                <small>3</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 align-self-center">
+                        <div class="col-12">
+                            <i class="fas fa-angle-up"></i>
+                            3
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
 
         <!-- Card 6 -->
         <div class="card text-white bg-danger">
@@ -278,8 +310,10 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="card-text">Woran ich gestern Nacht gemerkt habe, dass ich in München bin?<br><br>An der
-                                    Garderobe im Club hingen mehr Echtpelz als Kunstfellkrägen 🙈<br><br><b>#justusse</b>️</p>
+                                <p class="card-text">Woran ich gestern Nacht gemerkt habe, dass ich in München
+                                    bin?<br><br>An der
+                                    Garderobe im Club hingen mehr Echtpelz als Kunstfellkrägen
+                                    🙈<br><br><b>#justusse</b>️</p>
                             </div>
                         </div>
                         <div class="row">
@@ -313,7 +347,8 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="card-text">Top jodel on Nordkorea ist gerade ich zitiere "Ein sehr nices Land vong Freedom
+                                <p class="card-text">Top jodel on Nordkorea ist gerade ich zitiere "Ein sehr nices Land
+                                    vong Freedom
                                     her" 😂<br><br><b>#Pyongyang</b>️</p>
                             </div>
                         </div>
@@ -460,7 +495,9 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="card-text">Ich schau gerade die olympischen Winterspiele und frage mich gerade, wie man drauf kommt sich auf nen mini Schlitten zu legen und Kopfüber mit 140 km/h ne Eisbahn runterzubrettern 😀❄️❄️❄️</p>
+                                <p class="card-text">Ich schau gerade die olympischen Winterspiele und frage mich
+                                    gerade, wie man drauf kommt sich auf nen mini Schlitten zu legen und Kopfüber mit
+                                    140 km/h ne Eisbahn runterzubrettern 😀❄️❄️❄️</p>
                             </div>
                         </div>
                         <div class="row">
@@ -489,8 +526,35 @@
                      width="286" height="180" alt="Card image">
             </div>
             <div class="card-img-overlay">
-                <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
-                <i class="far fa-comments"></i>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main
+                                    Feed</strong> • 1min</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>️</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p></p>
+                                <i class="far fa-comments"> </i>
+                                <small>3</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 align-self-center">
+                        <div class="col-12">
+                            <i class="fas fa-angle-up"></i>
+                            3
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -541,8 +605,10 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="card-text">Woran ich gestern Nacht gemerkt habe, dass ich in München bin?<br><br>An der
-                                    Garderobe im Club hingen mehr Echtpelz als Kunstfellkrägen 🙈<br><br><b>#justusse</b>️</p>
+                                <p class="card-text">Woran ich gestern Nacht gemerkt habe, dass ich in München
+                                    bin?<br><br>An der
+                                    Garderobe im Club hingen mehr Echtpelz als Kunstfellkrägen
+                                    🙈<br><br><b>#justusse</b>️</p>
                             </div>
                         </div>
                         <div class="row">
@@ -576,7 +642,8 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <p class="card-text">Top jodel on Nordkorea ist gerade ich zitiere "Ein sehr nices Land vong Freedom
+                                <p class="card-text">Top jodel on Nordkorea ist gerade ich zitiere "Ein sehr nices Land
+                                    vong Freedom
                                     her" 😂<br><br><b>#Pyongyang</b>️</p>
                             </div>
                         </div>
@@ -600,8 +667,9 @@
         </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <!-- Modal Post -->
+    <div class="modal fade" id="exampleModalPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalPostTitle"
+         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content bg-danger">
                 <div class="modal-header text-white">
@@ -610,7 +678,8 @@
                             <div class="row">
                                 <div class="col-12">
                                     <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main
-                                        Feed</strong> • 1min <i class="fas fa-times float-right " data-dismiss="modal"></i></h6>
+                                        Feed</strong> • 1min <i class="fas fa-times float-right "
+                                                                data-dismiss="modal"></i></h6>
                                 </div>
                             </div>
                             <div class="row">
@@ -648,7 +717,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <p class="card-text text-white">Wenns Display defekt ist muss halt die Maus her😂</p>
+                                    <p class="card-text text-white">Wenns Display defekt ist muss halt die Maus
+                                        her😂</p>
                                 </div>
                             </div>
                         </div>
@@ -664,7 +734,8 @@
                         <div class="col-12 text-center text-white">
                             <i class="fas fa-ellipsis-h"></i>
                         </div>
-                    </div><div class="row">
+                    </div>
+                    <div class="row">
                         <div class="col-10">
                             <div class="row">
                                 <div class="col-12">
@@ -673,7 +744,137 @@
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <p class="card-text text-white">Wenns Display defekt ist muss halt die Maus her😂</p>
+                                    <p class="card-text text-white">Wenns Display defekt ist muss halt die Maus
+                                        her😂</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center text-white">
+                            <div class="col-12">
+                                <i class="fas fa-angle-up"></i>
+                                5
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center text-white">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6 class="card-title"><i class="far fa-map-marker"></i> here • 1min</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="card-text text-white">Wenns Display defekt ist muss halt die Maus
+                                        her😂</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center text-white">
+                            <div class="col-12">
+                                <i class="fas fa-angle-up"></i>
+                                5
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center text-white">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Post with Image -->
+    <div class="modal fade" id="exampleModalPostImage" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalPostImageTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-danger">
+                <div class="modal-header text-white" style="padding: 0px;">
+                    <div style="overflow: hidden; width: 100%;">
+                        <img class="card-img"
+                             src="http://dgue1f1nm4nsd.cloudfront.net/5a8800f229e9790010545a48_rW8tS81guPXFRM4J_thumb.jpeg"
+                             height="180" alt="Card image">
+                    </div>
+                    <div class="card-img-overlay">
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main
+                                            Feed</strong> • 1min</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>️</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p></p>
+                                        <i class="far fa-comments"> </i>
+                                        <small>3</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 align-self-center">
+                                <div class="col-12">
+                                    <i class="fas fa-angle-up"></i>
+                                    3
+                                    <i class="fas fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6 class="card-title"><i class="far fa-map-marker"></i> here • 1min</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="card-text text-white">Wenns Display defekt ist muss halt die Maus
+                                        her😂</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center text-white">
+                            <div class="col-12">
+                                <i class="fas fa-angle-up"></i>
+                                5
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center text-white">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6 class="card-title"><i class="far fa-map-marker"></i> here • 1min</h6>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="card-text text-white">Wenns Display defekt ist muss halt die Maus
+                                        her😂</p>
                                 </div>
                             </div>
                         </div>
@@ -736,8 +937,8 @@
 <!-- Latest compiled and minified Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         crossorigin="anonymous"></script>
-    <script>
-    window.onload = function() {
+<script>
+    window.onload = function () {
         // Set the size of the rendered Emojis
         // This can be set to 16x16, 36x36, or 72x72
         twemoji.size = '16x16';
