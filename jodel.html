@@ -11,6 +11,7 @@
         padding-top: 1em;
         font-family: "Gotham", 'Avenir', 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     }
+
     @font-face {
         font-family: "Gotham";
         font-style: normal;
@@ -36,20 +37,31 @@
         font-weight: bold;
         src: url("./fonts/Gotham-BoldItalic.otf") format("opentype");
     }
+
     h6, .fa-comments {
-        color:  rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.6);
     }
+
     h6 strong {
         color: #fff;
     }
+
     .bg-warning {
         background: #FFBA00 !important;
     }
+
     .bg-danger {
         background: #dd5f5f !important;;
     }
+
     .bg-primary {
         background: #06A3CB !important;;
+    }
+
+    img {
+        -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+        filter: blur(10px);
+        margin: -10px -1px -10px 0px;
     }
 </style>
 <div class="container">
@@ -58,9 +70,36 @@
         <!-- Card 1 -->
         <div class="card text-white bg-danger">
             <div class="card-body">
-                <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
-                <p class="card-text">Wenns Display defekt ist muss halt die Maus her😂</p>
-                <i class="far fa-comments"></i>
+                <div class="row">
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col-12">
+                                <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main
+                                    Feed</strong> • 1min</h6>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="card-text">Wenns Display defekt ist muss halt die Maus her😂</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p></p>
+                                <i class="far fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 align-self-center">
+                        <div class="col-12">
+                            <i class="fas fa-angle-up"></i>
+                            5
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
@@ -68,7 +107,8 @@
         <div class="card text-white bg-warning">
             <div class="card-body">
                 <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
-                <p class="card-text">Gestern vom Döner geträumt, heute einen geholt. Träume nicht dein Leben, sondern lebe deinen Traum! <strong>#Dönerliebe</strong></p>
+                <p class="card-text">Gestern vom Döner geträumt, heute einen geholt. Träume nicht dein Leben, sondern
+                    lebe deinen Traum! <strong>#Dönerliebe</strong></p>
                 <i class="far fa-comments"></i>
             </div>
         </div>
@@ -77,7 +117,9 @@
         <div class="card text-white bg-primary">
             <div class="card-body">
                 <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
-                <p class="card-text">Heute kam ein Strauß Rosen von meinem Freund aus Kanada. Jetzt ist meine Mutter sauer auf mein Paps, weil sie nicht mal eine Blume bekommt und mein Paps sauer auf mein Freund... <p class="w-100"></p><b>#ichfreumich #bisschenamüsant #3st</b></p>
+                <p class="card-text">Heute kam ein Strauß Rosen von meinem Freund aus Kanada. Jetzt ist meine Mutter
+                    sauer auf mein Paps, weil sie nicht mal eine Blume bekommt und mein Paps sauer auf mein Freund...
+                <p class="w-100"></p><b>#ichfreumich #bisschenamüsant #3st</b></p>
                 <i class="far fa-comments"></i>
             </div>
         </div>
@@ -86,14 +128,20 @@
         <div class="card text-white bg-primary">
             <div class="card-body">
                 <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
-                <p class="card-text">Ich schau gerade die olympischen Winterspiele und frage mich gerade, wie man drauf kommt sich auf nen mini Schlitten zu legen und Kopfüber mit 140 km/h ne Eisbahn runterzubrettern 😀❄️❄️❄️</p>
+                <p class="card-text">Ich schau gerade die olympischen Winterspiele und frage mich gerade, wie man drauf
+                    kommt sich auf nen mini Schlitten zu legen und Kopfüber mit 140 km/h ne Eisbahn runterzubrettern
+                    😀❄️❄️❄️</p>
                 <i class="far fa-comments"></i>
             </div>
         </div>
 
         <!-- Card 5 -->
         <div class="card text-white">
-            <img class="card-img" src="http://dgue1f1nm4nsd.cloudfront.net/5a881e8348d9570010a61819_UX0UTQNvVoZI856o_image.jpeg" width="286" height="180" alt="Card image">
+            <div style="overflow: hidden;">
+                <img class="card-img"
+                     src="http://dgue1f1nm4nsd.cloudfront.net/5a881d854fd2840016f8c8a0_8cN8yrlz0sydI44X_thumb.jpeg"
+                     width="286" height="180" alt="Card image">
+            </div>
             <div class="card-img-overlay">
                 <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
                 <i class="far fa-comments"></i>
@@ -105,6 +153,7 @@
             <div class="card-body">
                 <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
                 <p class="card-text">Wenns Display defekt ist muss halt die Maus her😂</p>
+                <i class="far fa-comments"></i>
             </div>
         </div>
 
@@ -112,7 +161,8 @@
         <div class="card text-white bg-primary">
             <div class="card-body">
                 <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
-                <p class="card-text">Woran ich gestern Nacht gemerkt habe, dass ich in München bin? An der Garderobe im Club hingen mehr Echtpelz als Kunstfellkrägen 🙈 <b>#justusse</b></p>
+                <p class="card-text">Woran ich gestern Nacht gemerkt habe, dass ich in München bin? An der Garderobe im
+                    Club hingen mehr Echtpelz als Kunstfellkrägen 🙈 <b>#justusse</b></p>
             </div>
         </div>
 
@@ -120,7 +170,8 @@
         <div class="card text-white bg-warning">
             <div class="card-body">
                 <h6 class="card-title"><i class="far fa-map-marker"></i> here • <strong>Main Feed</strong> • 1min</h6>
-                <p class="card-text">Top jodel on Nordkorea ist gerade ich zitiere "Ein sehr nices Land vong Freedom her" 😂 <b>#Pyongyang</b></p>
+                <p class="card-text">Top jodel on Nordkorea ist gerade ich zitiere "Ein sehr nices Land vong Freedom
+                    her" 😂 <b>#Pyongyang</b></p>
             </div>
         </div>
 
