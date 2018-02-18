@@ -23,6 +23,7 @@ gulp.task('js', function () {
         config.basePaths.node  + 'popper.js/dist/umd/popper.min.js', // https://github.com/FezVrasta/popper.js/issues/429
         config.basePaths.node  + 'bootstrap/dist/js/bootstrap.min.js',
         config.basePaths.node  + 'vue/dist/vue.js',
+        config.paths.js.src + 'vue.js',
         config.paths.js.src + 'app.js',])
         .pipe(minify())
         .pipe(concat('app.min.js'))

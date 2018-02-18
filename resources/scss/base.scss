@@ -6,22 +6,9 @@ h6, small, .fa-comments {
   color: rgba(255, 255, 255, 0.6);
 }
 
-h6 strong {
+h6 b {
   color: #fff;
 }
-
-.bg-warning {
-  background: #FFBA00 !important;
-}
-
-.bg-danger {
-  background: #dd5f5f !important;
-}
-
-.bg-primary {
-  background: #06A3CB !important;
-}
-
 img {
   &.card-img {
     -webkit-filter: blur(25px);
