@@ -19,9 +19,9 @@ gulp.task('js', function () {
         .pipe(gulp.dest(config.paths.js.dest));
 
     return gulp.src([
-        config.basePaths.node  + 'jquery/dist/jquery.js',
+        config.basePaths.node  + 'jquery/dist/jquery.min.js',
         config.basePaths.node  + 'popper.js/dist/umd/popper.min.js', // https://github.com/FezVrasta/popper.js/issues/429
-        config.basePaths.node  + 'bootstrap/dist/bootstrap.js',
+        config.basePaths.node  + 'bootstrap/dist/js/bootstrap.min.js',
         config.basePaths.node  + 'vue/dist/vue.js',
         config.paths.js.src + 'app.js',])
         .pipe(minify())
