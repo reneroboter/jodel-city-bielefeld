@@ -1,35 +1,36 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var csso = require('gulp-csso');
-var concat = require('gulp-concat');
-var minify = require('gulp-minify');
+let config = require('./configuration'),
+    gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    csso = require('gulp-csso'),
+    concat = require('gulp-concat'),
+    minify = require('gulp-minify');
 
-gulp.task('css', function(){
-    return gulp.src('resources/scss/main.scss')
+gulp.task('css', function () {
+    return gulp.src(config.paths.css.src + 'main.scss')
         .pipe(sass())
         .pipe(concat('main.min.css'))
         .pipe(csso())
-        .pipe(gulp.dest('build/css'))
+        .pipe(gulp.dest(config.paths.css.dest))
 });
 
 gulp.task('js', function () {
-    gulp.src(['resources/js/twemoji.min.js'])
+    gulp.src([config.paths.js.src  + 'twemoji.min.js'])
         .pipe(concat('head.min.js'))
-        .pipe(gulp.dest('build/js'))
+        .pipe(gulp.dest(config.paths.js.dest));
 
     return gulp.src([
-        'node_modules/jquery/dist/jquery.js',
-        'node_modules/popper.js/dist/umd/popper.min.js', // https://github.com/FezVrasta/popper.js/issues/429
-        'node_modules/bootstrap/dist/bootstrap.js',
-        'node_modules/vue/dist/vue.js',
-        'resources/js/app.js',])
+        config.basePaths.node  + 'jquery/dist/jquery.js',
+        config.basePaths.node  + 'popper.js/dist/umd/popper.min.js', // https://github.com/FezVrasta/popper.js/issues/429
+        config.basePaths.node  + 'bootstrap/dist/bootstrap.js',
+        config.basePaths.node  + 'vue/dist/vue.js',
+        config.paths.js.src + 'app.js',])
         .pipe(minify())
         .pipe(concat('app.min.js'))
-        .pipe(gulp.dest('build/js'))
+        .pipe(gulp.dest(config.paths.js.dest))
 });
 
 gulp.task('fonts', function () {
-    gulp.src('resources/fonts')
+    gulp.src('resources/fonts/*')
         .pipe(gulp.dest('build/fonts'));
 });
 

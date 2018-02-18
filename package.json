@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-less": "^3.5.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
+    "twemoji": "^2.5.0",
+    "vue": "^2.5.13"
+  }
+}
