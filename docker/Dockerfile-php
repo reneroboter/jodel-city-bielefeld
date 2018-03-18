@@ -1,0 +1,5 @@
+FROM webdevops/php-apache:alpine-php7
+
+# http://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-apache.html
+
+ENV WEB_DOCUMENT_ROOT "/app/docroot"

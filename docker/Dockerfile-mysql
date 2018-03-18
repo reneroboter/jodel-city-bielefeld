@@ -1,0 +1,8 @@
+FROM mysql:5.7
+
+ENV MYSQL_ALLOW_EMPTY_PASSWORD="true"
+ENV MYSQL_DATABASE="symfony"
+
+RUN echo 'sql-mode=""' >> /etc/mysql/conf.d/docker.cnf
+RUN echo 'character-set-server="utf8"' >> /etc/mysql/conf.d/docker.cnf
+RUN echo 'collation-server="utf8_general_ci"' >> /etc/mysql/conf.d/docker.cnf

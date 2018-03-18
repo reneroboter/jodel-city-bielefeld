@@ -1,0 +1,19 @@
+version: "3"
+services:
+  database:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile-mysql
+  http:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile-php
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - database
+    volumes:
+      - .:/app:cached
+    depends_on:
+      - database
